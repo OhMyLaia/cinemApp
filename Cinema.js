@@ -33,4 +33,7 @@ class Cinema {
     // adding documentation here 
     // change to commit and push
     // ejercicio de head -> documentation
+
+    // hacer cambios en local en documentation y mergearlos a main y pushear los cambios
+    // pero que origin/documentation no se actualice
 }
