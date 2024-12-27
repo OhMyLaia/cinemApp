@@ -31,4 +31,5 @@ class Cinema {
     }
     //${ this._moviesArr.forEach( movie => movie.toString() + "<br>" ) }
     // adding documentation here 
+    // change to commit and push
 }
