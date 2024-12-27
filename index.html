@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> cinemApp</title>
+</head>
+
+<body style="
+font-family: Arial, sans-serif;
+color: rgb(0, 3, 201);
+text-align: center;">
+
+
+<h1>CinemApp database</h1>
+
+<h3></h3>
+
+
+    
+    <section id="create">
+        <input id="newMovieNameInput" placeholder="movie's title">
+        <input id="newMovieDirectorInput" placeholder="director">
+        <input id="newMovieReleaseDateInput" placeholder="release date">
+        <br><br>
+
+        <button id="createButton" onclick="createNewMovie()"> create movie </button>
+    </section>
+
+    <br><br>
+
+    <section id="create">
+        <input id="newCinemaNameInput" placeholder="cinema's name">
+        <input id="newCinemaCompanyInput" placeholder="company">
+        <input id="newCinemaCityInput" placeholder="city">
+        <br><br>
+
+        <button id="createButton" onclick="createNewCinema()"> create cinema </button>
+    </section>
+
+    <br><br>
+
+    <section id="push">
+        <input id="movieToPush" placeholder="push this movie into...">
+        <input id="targetedCinema" placeholder="...this cinema's billboard">
+        <br><br>
+
+        <button id="pushButton" onclick="pushMovieToCinemaFun()"> push movie to cinema </button>
+    </section>
+
+    <br><br>
+    
+    <section id="read">
+        <input id="instanceToShow" placeholder="find per name">
+        <select id="selectShowData">
+            <option value="" selected disabled> Select an option</option>
+            <option value="movie">Movie</option>
+            <option value="cinema">Cinema</option>
+        </select>
+    <br><br>
+
+        <button id="readButton" onclick="readData()"> show data</button>
+    </section>
+    
+    <!-- <section id="update">
+        <input id="updateFlightInput">
+        <button id="updateButton" onclick="readMovie()"></button>
+    </section> -->
+
+    <br><br>
+    
+    <section id="delete">
+        <input id="instanceToDelete" placeholder="delete per name">
+        <select id="selectDeleteData">
+            <option value="" selected disabled> Select an option</option>
+            <option value="movie">Movie</option>
+            <option value="cinema">Cinema</option>
+        </select>
+        <button id="deleteButton" onclick="deleteInstance()"> delete data </button>
+    </section>
+    
+    <br><br>
+    
+    <div id="resultDiv"></div>
+
+
+
+    <script src="Cinema.js"></script>
+    <script src="Movie.js"></script>
+    <script src="main.js"></script>
+
+
+</body>
+
+</html>
